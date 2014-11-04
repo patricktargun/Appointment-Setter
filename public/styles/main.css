@@ -1,0 +1,18 @@
+
+body {
+	padding: 100px 300px;
+	text-align: center;
+}
+
+h1 {
+	margin-bottom: 20px;
+}
+
+h2 {
+	margin-top: 40px;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration:none; 
+}
