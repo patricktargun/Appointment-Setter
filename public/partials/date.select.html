@@ -3,20 +3,26 @@
 	<h1>Available Dates</h1>
 	<div class="col-md-4">
 		<h4>{{vm.daysToShow[0]}}</h4>
-		<div ng-repeat="times in vm.showTimesOne">
-			<p><a ng-click="vm.pickedDate(times, vm.daysToShow[0])">{{times.displayTime}}</a></p>
+		<div class="date-pick-box">
+			<div ng-repeat="times in vm.showTimesOne">
+				<p class="display-times"><a ng-click="vm.pickedDate(times, vm.daysToShow[0])">{{times.displayTime}}</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="col-md-4">
 		<h4>{{vm.daysToShow[1]}}</h4>
-		<div ng-repeat="times in vm.showTimesTwo">
-			<p><a ng-click="vm.pickedDate(times, vm.daysToShow[1])">{{times.displayTime}}</a></p>
+		<div class="date-pick-box">
+			<div ng-repeat="times in vm.showTimesTwo">
+				<p class="display-times"><a ng-click="vm.pickedDate(times, vm.daysToShow[1])">{{times.displayTime}}</a></p>
+			</div>
 		</div>
 	</div>
 	<div class="col-md-4">
 		<h4>{{vm.daysToShow[2]}}</h4>
-		<div ng-repeat="times in vm.showTimesThree">
-			<p><a ng-click="vm.pickedDate(times, vm.daysToShow[2])">{{times.displayTime}}</a></p>
+		<div class="date-pick-box">
+			<div ng-repeat="times in vm.showTimesThree">
+				<p class="display-times"><a ng-click="vm.pickedDate(times, vm.daysToShow[2])">{{times.displayTime}}</a></p>
+			</div>
 		</div>
 	</div>
 	</div>

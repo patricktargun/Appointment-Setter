@@ -27,14 +27,20 @@ module.exports.getDate = function(req, res){
 		availableSlots.dayHeaders.push(moment().add(2, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(3, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 
+		createDates(1, 2, 30, availableSlots.dateOne);
+		createDates(1, 3, 00, availableSlots.dateOne);
 		createDates(1, 5, 00, availableSlots.dateOne);
 		createDates(1, 6, 30, availableSlots.dateOne);
 		createDates(1, 7, 00, availableSlots.dateOne);
 
+		createDates(2, 2, 30, availableSlots.dateTwo);
+		createDates(2, 3, 00, availableSlots.dateTwo);
 		createDates(2, 5, 00, availableSlots.dateTwo);
 		createDates(2, 6, 30, availableSlots.dateTwo);
 		createDates(2, 7, 00, availableSlots.dateTwo);
 
+		createDates(3, 2, 30, availableSlots.dateThree);
+		createDates(3, 3, 00, availableSlots.dateThree);
 		createDates(3, 5, 00, availableSlots.dateThree);
 		createDates(3, 6, 30, availableSlots.dateThree);
 		createDates(3, 7, 00, availableSlots.dateThree);
@@ -43,19 +49,94 @@ module.exports.getDate = function(req, res){
 		availableSlots.dayHeaders.push(moment().add(1, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(2, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(5, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
+
+		createDates(1, 2, 30, availableSlots.dateOne);
+		createDates(1, 3, 00, availableSlots.dateOne);
+		createDates(1, 5, 00, availableSlots.dateOne);
+		createDates(1, 6, 30, availableSlots.dateOne);
+		createDates(1, 7, 00, availableSlots.dateOne);
+
+		createDates(2, 2, 30, availableSlots.dateTwo);
+		createDates(2, 3, 00, availableSlots.dateTwo);
+		createDates(2, 5, 00, availableSlots.dateTwo);
+		createDates(2, 6, 30, availableSlots.dateTwo);
+		createDates(2, 7, 00, availableSlots.dateTwo);
+
+		createDates(5, 2, 30, availableSlots.dateThree);
+		createDates(5, 3, 00, availableSlots.dateThree);
+		createDates(5, 5, 00, availableSlots.dateThree);
+		createDates(5, 6, 30, availableSlots.dateThree);
+		createDates(5, 7, 00, availableSlots.dateThree);
 	};
 	if(day === 4) {
 		availableSlots.dayHeaders.push(moment().add(1, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(4, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(5, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
+
+		createDates(1, 2, 30, availableSlots.dateOne);
+		createDates(1, 3, 00, availableSlots.dateOne);
+		createDates(1, 5, 00, availableSlots.dateOne);
+		createDates(1, 6, 30, availableSlots.dateOne);
+		createDates(1, 7, 00, availableSlots.dateOne);
+
+		createDates(4, 2, 30, availableSlots.dateTwo);
+		createDates(4, 3, 00, availableSlots.dateTwo);
+		createDates(4, 5, 00, availableSlots.dateTwo);
+		createDates(4, 6, 30, availableSlots.dateTwo);
+		createDates(4, 7, 00, availableSlots.dateTwo);
+
+		createDates(5, 2, 30, availableSlots.dateThree);
+		createDates(5, 3, 00, availableSlots.dateThree);
+		createDates(5, 5, 00, availableSlots.dateThree);
+		createDates(5, 6, 30, availableSlots.dateThree);
+		createDates(5, 7, 00, availableSlots.dateThree);
+
 	};
 	if(day === 5) {
 		availableSlots.dayHeaders.push(moment().add(3, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(4, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 		availableSlots.dayHeaders.push(moment().add(5, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
+
+		createDates(3, 2, 30, availableSlots.dateOne);
+		createDates(3, 3, 00, availableSlots.dateOne);
+		createDates(3, 5, 00, availableSlots.dateOne);
+		createDates(3, 6, 30, availableSlots.dateOne);
+		createDates(3, 7, 00, availableSlots.dateOne);
+
+		createDates(4, 2, 30, availableSlots.dateTwo);
+		createDates(4, 3, 00, availableSlots.dateTwo);
+		createDates(4, 5, 00, availableSlots.dateTwo);
+		createDates(4, 6, 30, availableSlots.dateTwo);
+		createDates(4, 7, 00, availableSlots.dateTwo);
+
+		createDates(5, 2, 30, availableSlots.dateThree);
+		createDates(5, 3, 00, availableSlots.dateThree);
+		createDates(5, 5, 00, availableSlots.dateThree);
+		createDates(5, 6, 30, availableSlots.dateThree);
+		createDates(5, 7, 00, availableSlots.dateThree);
 	};
 	if(day === 6) {
+		availableSlots.dayHeaders.push(moment().add(2, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
+		availableSlots.dayHeaders.push(moment().add(3, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
+		availableSlots.dayHeaders.push(moment().add(5, 'days').format('dddd' + ', ' + 'MMM Do YYYY'));
 
+		createDates(2, 2, 30, availableSlots.dateOne);
+		createDates(2, 3, 00, availableSlots.dateOne);
+		createDates(2, 5, 00, availableSlots.dateOne);
+		createDates(2, 6, 30, availableSlots.dateOne);
+		createDates(2, 7, 00, availableSlots.dateOne);
+
+		createDates(3, 2, 30, availableSlots.dateTwo);
+		createDates(3, 3, 00, availableSlots.dateTwo);
+		createDates(3, 5, 00, availableSlots.dateTwo);
+		createDates(3, 6, 30, availableSlots.dateTwo);
+		createDates(3, 7, 00, availableSlots.dateTwo);
+
+		createDates(4, 2, 30, availableSlots.dateThree);
+		createDates(4, 3, 00, availableSlots.dateThree);
+		createDates(4, 5, 00, availableSlots.dateThree);
+		createDates(4, 6, 30, availableSlots.dateThree);
+		createDates(4, 7, 00, availableSlots.dateThree);
 	};
 
 
